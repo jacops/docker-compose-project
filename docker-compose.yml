@@ -1,0 +1,7 @@
+version: "2.1"
+
+services:
+  app:
+    image: "${DOCKER_HUB:-}${DOCKER_IMAGE:-jacops/docker-compose-project}:${DOCKER_IMAGE_TAG:-latest}"
+    build:
+      context: .
